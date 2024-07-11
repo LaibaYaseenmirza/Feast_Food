@@ -1,0 +1,2154 @@
+
+        android:id="@+id/foodimage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnAddFood"
+        app:layout_constraintEnd_toStartOf="@+id/tvAddImage"
+        app:layout_constraintHorizontal_bias="0.108"
+        android:layout_margin="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etFoodPrice"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/yeonsung_regular"
+        android:text="Feast Fleet"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView3"
+        app:layout_constraintStart_toStartOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/lato_regular"
+        android:text="Deliver Favorite Food"
+        android:textColor="@color/textColor"
+        app:layout_constraintEnd_toEndOf="@+id/textView6"
+        app:layout_constraintStart_toStartOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+
+    <!-- Add Food Description EditText -->
+
+    <TextView
+        android:id="@+id/tvAddImage"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:fontFamily="@font/lato_regular"
+        android:text="Add Food Image"
+        android:textColor="@color/textColor"
+        android:textSize="21sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnAddFood"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.942"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etFoodPrice"
+        app:layout_constraintVertical_bias="0.207" />
+
+    <EditText
+        android:id="@+id/etFoodName"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/edittext"
+        android:drawablePadding="15dp"
+        android:elevation="5dp"
+        android:fontFamily="@font/lato_regular"
+        android:hint="Add Food Name"
+        android:paddingLeft="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        tools:layout_editor_absoluteX="32dp" />
+
+    <EditText
+        android:id="@+id/etFoodDescription"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edittext"
+        android:drawablePadding="15dp"
+        android:elevation="5dp"
+        android:fontFamily="@font/lato_regular"
+        android:hint="Add Food Description"
+        android:paddingLeft="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etFoodName" />
+
+    <!-- Add Food Price EditText -->
+    <EditText
+        android:id="@+id/etFoodPrice"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edittext"
+        android:drawablePadding="15dp"
+        android:elevation="5dp"
+        android:fontFamily="@font/lato_regular"
+        android:hint="Add Food Price"
+        android:inputType="numberDecimal"
+        android:paddingLeft="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etFoodDescription" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnAddFood"
+        android:layout_width="152dp"
+        android:layout_height="57dp"
+        android:background="@drawable/gradientbutton"
+        android:fontFamily="@font/yeonsung_regular"
+        android:text="Add Food"
+        android:textAllCaps="false"
+
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.952" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+activity_admin_home
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminHome">
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnUser"
+        android:layout_width="152dp"
+        android:layout_height="57dp"
+        android:background="@drawable/gradientbutton"
+        android:fontFamily="@font/yeonsung_regular"
+        android:text="View Users"
+        android:textAllCaps="false"
+
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.787" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnAddUFood"
+        android:layout_width="152dp"
+        android:layout_height="57dp"
+        android:background="@drawable/gradientbutton"
+        android:fontFamily="@font/yeonsung_regular"
+        android:text="Add Food"
+        android:textAllCaps="false"
+
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnUser"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.862" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+activity_admin_login
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textAlignment="center"
+    tools:context=".AdminLogin">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/yeonsung_regular"
+        android:text="Feast Fleet"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView3"
+        app:layout_constraintStart_toStartOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/lato_regular"
+        android:text="Deliver Favorite Food"
+        android:textColor="@color/textColor"
+        app:layout_constraintEnd_toEndOf="@+id/textView6"
+        app:layout_constraintStart_toStartOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:elevation="5dp"
+        android:fontFamily="@font/lato_bold"
+        android:text="Sign_In To Your  Account"
+        android:textColor="@color/textColor"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView7"
+        app:layout_constraintStart_toStartOf="@+id/textView7"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="325dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/edittext"
+        android:drawableLeft="@drawable/lock_01"
+        android:drawablePadding="15dp"
+        android:elevation="5dp"
+        android:fontFamily="@font/lato_regular"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingLeft="15dp"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextEmailAddress"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextEmailAddress"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress" />
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress"
+        android:layout_width="325dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/edittext"
+        android:drawableLeft="@drawable/mail_02"
+        android:drawablePadding="15dp"
+        android:elevation="5dp"
+        android:fontFamily="@font/lato_regular"
+        android:hint="Email or Phone Number"
+        android:paddingLeft="15dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView8"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="@+id/textView8"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnLogin"
+        android:layout_width="152dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/gradientbutton"
+        android:fontFamily="@font/yeonsung_regular"
+        android:text="Sign In"
+        android:textAllCaps="false"
+
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextPassword"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextPassword"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+activity_details
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvHead"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginBottom="5dp"
+        app:cardCornerRadius="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="10dp"
+        android:elevation="10dp"
+        >
+
+        <ImageView
+            android:id="@+id/imageViewDetail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tvFoodName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Food Name"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/tvPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Price"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description :"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        >
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <TextView
+                android:id="@+id/tvDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Description text"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"
+                />
+
+
+        </ScrollView>
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="5dp"
+
+        >
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnOrder"
+            android:layout_width="152dp"
+            android:layout_height="57dp"
+            android:background="@drawable/gradientbutton"
+            android:fontFamily="@font/yeonsung_regular"
+            android:text="Buy Now"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnCart"
+            android:layout_width="152dp"
+            android:layout_height="57dp"
+            android:background="@drawable/gradientbutton"
+            android:fontFamily="@font/yeonsung_regular"
+            android:text="Add to Cart"
+            android:textAllCaps="false"
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>
+
+</ScrollView>
+
+activity_main
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="32dp"
+                android:text="TextView"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tvResturants"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Restaurants"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginVertical="5dp"
+                android:layout_marginStart="10dp"
+                android:layout_below="@id/textView5"
+                />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvHead"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginBottom="5dp"
+                app:cardCornerRadius="15dp"
+                android:elevation="10dp"
+                android:layout_below="@id/tvResturants">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/rvHeader"
+                    android:orientation="horizontal"
+                    android:scrollbars="horizontal" />
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- Additional CardViews with RecyclerViews -->
+
+            <TextView
+                android:id="@+id/tvFastFood"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Recommended"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginStart="10dp"
+                android:layout_marginVertical="5dp"
+                android:layout_below="@id/cvHead"
+                />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvSection1"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                app:cardCornerRadius="15dp"
+                android:elevation="10dp"
+                android:layout_below="@+id/tvFastFood">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/rvSection1"
+                    android:orientation="horizontal"
+                    android:scrollbars="horizontal" />
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/tvDesi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Popular"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginStart="10dp"
+                android:layout_marginVertical="5dp"
+                android:layout_below="@id/cvSection1"
+                />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvSection2"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                app:cardCornerRadius="15dp"
+                android:elevation="10dp"
+                android:layout_below="@+id/tvDesi">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/rvSection2"
+                    android:orientation="horizontal"
+                    android:scrollbars="horizontal" />
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/tvSweets"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Arrivals"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginStart="10dp"
+                android:layout_marginVertical="5dp"
+                android:layout_below="@id/cvSection2"
+                />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvSection3"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="15dp"
+                android:elevation="10dp"
+                android:layout_below="@+id/tvSweets">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/rvSection3"
+                    android:orientation="horizontal"
+                    android:scrollbars="horizontal" />
+
+            </androidx.cardview.widget.CardView>
+            <TextView
+                android:id="@+id/tvVeg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Comfort Food"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginStart="10dp"
+                android:layout_marginVertical="5dp"
+                android:layout_below="@id/cvSection3"
+                />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvSection4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginVertical="10dp"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="15dp"
+                android:elevation="10dp"
+                android:layout_below="@+id/tvVeg">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/rvSection4"
+                    android:layout_marginVertical="10dp"
+                    android:orientation="horizontal"
+                    android:scrollbars="horizontal" />
+
+            </androidx.cardview.widget.CardView>
+
+
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>
+
+activity_signin
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textAlignment="center"
+    tools:context=".ActivitySignin">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/yeonsung_regular"
+        android:text="Feast Fleet"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView3"
+        app:layout_constraintStart_toStartOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/lato_regular"
+        android:text="Deliver Favorite Food"
+        android:textColor="@color/textColor"
+        app:layout_constraintEnd_toEndOf="@+id/textView6"
+        app:layout_constraintStart_toStartOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:elevation="5dp"
+        android:fontFamily="@font/lato_bold"
+        android:text="Sign_In To Your  Account"
+        android:textColor="@color/textColor"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView7"
+        app:layout_constraintStart_toStartOf="@+id/textView7"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="325dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/edittext"
+        android:drawableLeft="@drawable/lock_01"
+        android:drawablePadding="15dp"
+        android:elevation="5dp"
+        android:fontFamily="@font/lato_regular"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingLeft="15dp"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextEmailAddress"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextEmailAddress"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress" />
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress"
+        android:layout_width="325dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/edittext"
+        android:drawableLeft="@drawable/mail_02"
+        android:drawablePadding="15dp"
+        android:elevation="5dp"
+        android:fontFamily="@font/lato_regular"
+        android:hint="Email or Phone Number"
+        android:paddingLeft="15dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView8"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="@+id/textView8"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnLogin"
+        android:layout_width="152dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/gradientbutton"
+        android:fontFamily="@font/yeonsung_regular"
+        android:text="Sign In"
+        android:textAllCaps="false"
+
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextPassword"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextPassword"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+
+    <TextView
+        android:id="@+id/textViewAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/lato_regular"
+        android:text="Don’t Have Account? Sign Up"
+        android:textColor="@color/textColor"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnLogin" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+activity_signup
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textAlignment="center"
+    android:orientation="vertical"
+    tools:context=".ActivitySignin">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/yeonsung_regular"
+        android:text="Feast Fleet"
+        android:textSize="40sp"
+        android:layout_gravity="center"
+
+        />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/lato_regular"
+        android:text="Deliver Favorite Food"
+        android:textColor="@color/textColor"
+        android:layout_gravity="center"
+
+        />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:elevation="5dp"
+        android:fontFamily="@font/lato_bold"
+        android:text="Sign_Up Here"
+        android:textColor="@color/textColor"
+        android:layout_gravity="center"
+
+        android:textSize="20sp"
+        />
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="325dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/edittext"
+        android:drawableLeft="@drawable/user_01"
+        android:drawablePadding="15dp"
+        android:elevation="5dp"
+        android:ems="10"
+        android:fontFamily="@font/lato_regular"
+        android:hint="Name"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="15dp"
+        android:layout_gravity="center"
+
+        />
+
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress"
+        android:layout_width="325dp"
+        android:layout_height="57dp"
+        android:background="@drawable/edittext"
+        android:drawableLeft="@drawable/mail_02"
+        android:drawablePadding="15dp"
+        android:elevation="5dp"
+        android:ems="10"
+        android:fontFamily="@font/lato_regular"
+        android:hint="Email or Phone Number"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="15dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="24dp"
+        />
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="325dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/edittext"
+        android:drawableLeft="@drawable/lock_01"
+        android:drawablePadding="15dp"
+        android:elevation="5dp"
+        android:ems="10"
+        android:fontFamily="@font/lato_regular"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:layout_gravity="center"
+
+        android:paddingLeft="15dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSignUp"
+        android:layout_width="152dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/gradientbutton"
+        android:fontFamily="@font/yeonsung_regular"
+        android:text="Sign Up"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/textViewAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/lato_regular"
+        android:text="Already Have An Account? Sign In"
+        android:textColor="@color/textColor"
+        android:textSize="14sp"
+        android:layout_gravity="center"
+        />
+
+</LinearLayout>
+
+activity_splash
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivitySplash">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/yeonsung_regular"
+        android:text="Feast Fleet"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Deliever Favorite Food"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo__1_" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+activity_start
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textAlignment="center"
+    tools:context=".ActivityStart">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/backkground_start_1" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/yeonsung_regular"
+        android:text="Enjoy Restaurant Quality Meals\nat Home"
+        android:textAlignment="center"
+        android:textColor="@color/textColor"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnStartSignIn"
+        android:layout_width="120dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/gradientbutton"
+        android:text="Sign_In"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView4"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnStartSIgnUp"
+        android:layout_width="120dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/gradientbutton"
+        android:text="Sign_Up"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/btnStartSignIn"
+        app:layout_constraintStart_toStartOf="@+id/btnStartSignIn"
+        app:layout_constraintTop_toBottomOf="@+id/btnStartSignIn" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+activity_user_selection
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityUserSelection">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnUser"
+        android:layout_width="152dp"
+        android:layout_height="57dp"
+        android:background="@drawable/gradientbutton"
+        android:fontFamily="@font/yeonsung_regular"
+        android:text="User"
+        android:textAllCaps="false"
+
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.787" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnAdmin"
+        android:layout_width="152dp"
+        android:layout_height="57dp"
+        android:background="@drawable/gradientbutton"
+        android:fontFamily="@font/yeonsung_regular"
+        android:text="Admin"
+        android:textAllCaps="false"
+
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnUser"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.862" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+activity_view_users
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityUserSelection">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnUser"
+        android:layout_width="152dp"
+        android:layout_height="57dp"
+        android:background="@drawable/gradientbutton"
+        android:fontFamily="@font/yeonsung_regular"
+        android:text="User"
+        android:textAllCaps="false"
+
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.787" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnAdmin"
+        android:layout_width="152dp"
+        android:layout_height="57dp"
+        android:background="@drawable/gradientbutton"
+        android:fontFamily="@font/yeonsung_regular"
+        android:text="Admin"
+        android:textAllCaps="false"
+
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnUser"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.862" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+item_image
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="3dp"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop" />
+</LinearLayout>
+
+item_user
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/textViewUserName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="User Name"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/textViewUserEmail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="user@example.com"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@id/textViewUserName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
+
+
+
+
+
+
+Manifests
+
+AndroidManifest
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light"
+        tools:targetApi="31">
+        <activity
+            android:name=".ViewUsersActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddFoodActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminHome"
+            android:exported="false" />
+        <activity
+            android:name=".AdminLogin"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityUserSelection"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityDetails"
+            android:exported="false" />
+        <activity
+            android:name=".ActivitySignup"
+            android:exported="false" />
+        <activity
+            android:name=".ActivitySignin"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityStart"
+            android:exported="false" />
+        <activity
+            android:name=".ActivitySplash"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+    </application>
+
+</manifest>
+
+
+
+
+
+
+
+Java
+
+ActivityDetails
+
+package com.hiskytech.feastfleet;
+
+import android.os.Bundle;
+import android.widget.Toast;
+import androidx.appcompat.app.AppCompatActivity;
+import com.bumptech.glide.Glide;
+import com.hiskytech.feastfleet.databinding.ActivityDetailsBinding;
+
+public class ActivityDetails extends AppCompatActivity {
+    private ActivityDetailsBinding binding;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        binding = ActivityDetailsBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
+
+        String imageUrl = getIntent().getStringExtra("imageUrl");
+
+        binding.tvFoodName.setText(getIntent().getStringExtra("name"));
+        binding.tvDescription.setText(getIntent().getStringExtra("description"));
+        binding.tvPrice.setText(getIntent().getStringExtra("price"));
+
+        Glide.with(this).load(imageUrl).centerCrop().into(binding.imageViewDetail);
+
+        binding.btnCart.setOnClickListener(v -> {
+            Toast.makeText(ActivityDetails.this, "Added to cart", Toast.LENGTH_SHORT).show();
+        });
+        binding.btnOrder.setOnClickListener(v -> {
+            Toast.makeText(ActivityDetails.this, "Your Order has been placed", Toast.LENGTH_SHORT).show();
+        });
+    }
+}
+
+ActivitySignin
+package com.hiskytech.feastfleet;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.widget.Toast;
+import androidx.appcompat.app.AppCompatActivity;
+import com.google.firebase.firestore.FirebaseFirestore;
+import com.hiskytech.feastfleet.databinding.ActivitySigninBinding;
+
+public class ActivitySignin extends AppCompatActivity {
+    private ActivitySigninBinding binding;
+    private FirebaseFirestore db;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        binding = ActivitySigninBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
+
+        db = FirebaseFirestore.getInstance();
+
+        binding.textViewAccount.setOnClickListener(v -> {
+            startActivity(new Intent(ActivitySignin.this, ActivitySignup.class));
+        });
+
+        binding.btnLogin.setOnClickListener(v -> {
+            String loginEmail = binding.editTextTextEmailAddress.getText().toString();
+            String loginPassword = binding.editTextTextPassword.getText().toString();
+
+            if (loginEmail.isEmpty() || loginPassword.isEmpty()) {
+                Toast.makeText(ActivitySignin.this, "Fill all fields", Toast.LENGTH_SHORT).show();
+                return;
+            }
+
+            // Query FireStore for the user document
+            db.collection("users")
+                    .whereEqualTo("email", loginEmail)
+                    .limit(1)
+                    .get()
+                    .addOnSuccessListener(documents -> {
+                        if (documents.isEmpty()) {
+                            Toast.makeText(ActivitySignin.this, "No user found with this email", Toast.LENGTH_SHORT).show();
+                            return;
+                        }
+
+                        for (com.google.firebase.firestore.QueryDocumentSnapshot document : documents) {
+                            com.google.firebase.firestore.DocumentSnapshot doc = documents.getDocuments().get(0);
+                            String storedPassword = doc.getString("password") != null ? doc.getString("password").trim() : null;
+                            if (storedPassword != null && storedPassword.equals(loginPassword)) {
+                                String userName = doc.getString("name");
+                                String userId = doc.getString("userId");
+                                Toast.makeText(ActivitySignin.this, "Login successful", Toast.LENGTH_SHORT).show();
+                                Intent intent = new Intent(ActivitySignin.this, MainActivity.class);
+                                intent.putExtra("userId", doc.getId());
+                                intent.putExtra("userName", userName);
+                                startActivity(intent);
+                            } else {
+                                Toast.makeText(ActivitySignin.this, "Incorrect password", Toast.LENGTH_SHORT).show();
+                            }
+                        }
+                    })
+                    .addOnFailureListener(exception -> {
+                        Toast.makeText(ActivitySignin.this, "Error: " + exception.getLocalizedMessage(), Toast.LENGTH_SHORT).show();
+                    });
+        });
+    }
+}
+
+ActivitySignup
+package com.hiskytech.feastfleet;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.widget.Toast;
+import androidx.appcompat.app.AppCompatActivity;
+import com.google.firebase.firestore.FirebaseFirestore;
+import com.hiskytech.feastfleet.databinding.ActivitySignupBinding;
+
+public class ActivitySignup extends AppCompatActivity {
+    private ActivitySignupBinding binding;
+    private FirebaseFirestore db;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        binding = ActivitySignupBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
+
+        db = FirebaseFirestore.getInstance();
+
+        binding.textViewAccount.setOnClickListener(v -> {
+            startActivity(new Intent(ActivitySignup.this, ActivitySignin.class));
+        });
+
+        binding.btnSignUp.setOnClickListener(v -> {
+            String userName = binding.etName.getText().toString();
+            String userEmail = binding.editTextTextEmailAddress.getText().toString();
+            String password = binding.editTextTextPassword.getText().toString();
+
+            if (userName.isEmpty() || userEmail.isEmpty() || password.isEmpty()) {
+                Toast.makeText(ActivitySignup.this, "Fill All fields", Toast.LENGTH_SHORT).show();
+                return;
+            }
+
+            ModelUser user = new ModelUser();
+            user.setName(userName);
+            user.setEmail(userEmail);
+            user.setPassword(password);
+
+            db.collection("users")
+                    .add(user)
+                    .addOnSuccessListener(documentReference -> {
+                        String userId = documentReference.getId();
+                        user.setUserId(userId);
+
+                        db.collection("users").document(documentReference.getId()).set(user)
+                                .addOnSuccessListener(aVoid -> {
+                                    Toast.makeText(ActivitySignup.this, "SignUp Successfully", Toast.LENGTH_SHORT).show();
+                                    startActivity(new Intent(ActivitySignup.this, ActivitySignin.class));
+                                    Toast.makeText(ActivitySignup.this, userId, Toast.LENGTH_SHORT).show();
+                                });
+                    })
+                    .addOnFailureListener(e -> {
+                        Toast.makeText(ActivitySignup.this, "Error is: " + e.getLocalizedMessage(), Toast.LENGTH_SHORT).show();
+                    });
+        });
+    }
+}
+
+ActivitySplash
+package com.hiskytech.feastfleet;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.os.Handler;
+import android.os.Looper;
+import androidx.appcompat.app.AppCompatActivity;
+import com.hiskytech.feastfleet.databinding.ActivitySplashBinding;
+
+public class ActivitySplash extends AppCompatActivity {
+    private ActivitySplashBinding binding;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        binding = ActivitySplashBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
+
+        new Handler(Looper.getMainLooper()).postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                Intent intent = new Intent(ActivitySplash.this, ActivityUserSelection.class);
+                startActivity(intent);
+                finish();
+            }
+        }, 3000);
+    }
+}
+
+ActivityStart
+package com.hiskytech.feastfleet;
+
+import android.content.Intent;
+import android.os.Bundle;
+import androidx.appcompat.app.AppCompatActivity;
+import com.hiskytech.feastfleet.databinding.ActivityStartBinding;
+
+public class ActivityStart extends AppCompatActivity {
+    private ActivityStartBinding binding;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        binding = ActivityStartBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
+        binding.btnStartSignIn.setOnClickListener(v -> {
+            startActivity(new Intent(ActivityStart.this, ActivitySignin.class));
+        });
+
+        binding.btnStartSIgnUp.setOnClickListener(v -> {
+            startActivity(new Intent(ActivityStart.this, ActivitySignup.class));
+        });
+    }
+}
+
+ActivityUserSelection
+ package com.hiskytech.feastfleet;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatButton;
+
+public class ActivityUserSelection extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_user_selection);
+
+        AppCompatButton btnUser = findViewById(R.id.btnUser);
+        AppCompatButton btnAdmin = findViewById(R.id.btnAdmin);
+
+        btnUser.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ActivityUserSelection.this, ActivityStart.class);
+                startActivity(intent);
+            }
+        });
+
+        btnAdmin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ActivityUserSelection.this, AdminLogin.class);
+                startActivity(intent);
+            }
+        });
+    }
+}
+
+AdapterImage
+ package com.hiskytech.feastfleet;
+
+import android.content.Context;
+import android.content.Intent;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ImageView;
+import androidx.recyclerview.widget.RecyclerView;
+import com.bumptech.glide.Glide;
+import com.firebase.ui.firestore.FirestoreRecyclerAdapter;
+import com.firebase.ui.firestore.FirestoreRecyclerOptions;
+
+public class AdapterImage extends FirestoreRecyclerAdapter<ModelImage, AdapterImage.ImageViewHolder> {
+    private final Context context;
+
+    public AdapterImage(FirestoreRecyclerOptions<ModelImage> options, Context context) {
+        super(options);
+        this.context = context;
+    }
+
+    public static class ImageViewHolder extends RecyclerView.ViewHolder {
+        ImageView imageView;
+
+        public ImageViewHolder(View itemView) {
+            super(itemView);
+            imageView = itemView.findViewById(R.id.imageView);
+        }
+    }
+
+    @Override
+    protected void onBindViewHolder(ImageViewHolder holder, int position, ModelImage model) {
+        Glide.with(context).load(model.getImageUrl()).into(holder.imageView);
+        holder.itemView.setOnClickListener(v -> {
+            Intent intent = new Intent(context, ActivityDetails.class);
+            intent.putExtra("imageUrl", model.getImageUrl());
+            intent.putExtra("name", model.getName());
+            intent.putExtra("description", model.getDescription());
+            intent.putExtra("price", model.getPrice());
+            context.startActivity(intent);
+        });
+    }
+
+    @Override
+    public ImageViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_image, parent, false);
+        return new ImageViewHolder(view);
+    }
+}
+
+AddFoodActivity
+package com.hiskytech.feastfleet;
+import android.content.Intent;
+import android.net.Uri;
+import android.os.Bundle;
+import android.widget.EditText;
+import android.widget.ImageView;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatButton;
+
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.StorageReference;
+import com.google.firebase.storage.UploadTask;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class AddFoodActivity extends AppCompatActivity {
+
+    private static final int PICK_IMAGE_REQUEST = 1;
+    private Uri selectedImageUri;
+    private FirebaseFirestore db;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_add_food);
+
+        db = FirebaseFirestore.getInstance();
+
+        AppCompatButton btnAddFood = findViewById(R.id.btnAddFood);
+        btnAddFood.setOnClickListener(v -> {
+            uploadImageAndData();
+        });
+
+        TextView imageView = findViewById(R.id.tvAddImage);
+        imageView.setOnClickListener(v -> openGallery());
+    }
+
+    private void openGallery() {
+        Intent intent = new Intent();
+        intent.setType("image/*");
+        intent.setAction(Intent.ACTION_GET_CONTENT);
+        startActivityForResult(Intent.createChooser(intent, "Select Picture"), PICK_IMAGE_REQUEST);
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode == PICK_IMAGE_REQUEST && resultCode == RESULT_OK && data != null && data.getData() != null) {
+            selectedImageUri = data.getData();
+            ImageView imageView = findViewById(R.id.foodimage);
+            imageView.setImageURI(selectedImageUri);
+        }
+    }
+
+    private void uploadImageAndData() {
+        if (selectedImageUri != null) {
+            StorageReference storageRef = FirebaseStorage.getInstance().getReference().child("food_images/" + System.currentTimeMillis() + ".jpg");
+            storageRef.putFile(selectedImageUri)
+                    .addOnSuccessListener(taskSnapshot -> {
+                        // Image uploaded successfully
+                        storageRef.getDownloadUrl().addOnSuccessListener(uri -> {
+                            // Get download URL
+                            String imageUrl = uri.toString();
+                            // Save data to Firestore
+                            saveFoodData(imageUrl);
+                        }).addOnFailureListener(e -> {
+                            // Error getting download URL
+                            Toast.makeText(AddFoodActivity.this, "Error getting download URL", Toast.LENGTH_SHORT).show();
+                        });
+                    })
+                    .addOnFailureListener(e -> {
+                        // Error uploading image
+                        Toast.makeText(AddFoodActivity.this, "Error uploading image", Toast.LENGTH_SHORT).show();
+                    });
+        } else {
+            // No image selected
+            Toast.makeText(this, "Please select an image", Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    private void saveFoodData(String imageUrl) {
+        EditText etFoodName = findViewById(R.id.etFoodName);
+        EditText etFoodDescription = findViewById(R.id.etFoodDescription);
+        EditText etFoodPrice = findViewById(R.id.etFoodPrice);
+
+        String foodName = etFoodName.getText().toString();
+        String foodDescription = etFoodDescription.getText().toString();
+        String foodPrice = etFoodPrice.getText().toString();
+
+        Map<String, Object> foodData = new HashMap<>();
+        foodData.put("name", foodName);
+        foodData.put("description", foodDescription);
+        foodData.put("price", foodPrice);
+        foodData.put("imageUrl", imageUrl);
+
+        db.collection("Food").add(foodData)
+                .addOnSuccessListener(documentReference -> {
+                    // Food data added successfully
+                    Toast.makeText(AddFoodActivity.this, "Food added successfully", Toast.LENGTH_SHORT).show();
+                    finish(); // Finish activity
+                })
+                .addOnFailureListener(e -> {
+                    // Error adding food data
+                    Toast.makeText(AddFoodActivity.this, "Error adding food", Toast.LENGTH_SHORT).show();
+                });
+    }
+}
+
+AdminHome
+package com.hiskytech.feastfleet;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatButton;
+
+public class AdminHome extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_admin_home);
+
+        AppCompatButton btnAddFood = findViewById(R.id.btnAddUFood);
+        AppCompatButton btnViewUsers = findViewById(R.id.btnUser);
+
+        btnAddFood.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(AdminHome.this, AddFoodActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        btnViewUsers.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(AdminHome.this, ViewUsersActivity.class);
+                startActivity(intent);
+            }
+        });
+    }
+}
+
+AdminLogin
+ package com.hiskytech.feastfleet;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
+import android.widget.EditText;
+import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatButton;
+
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.firestore.DocumentSnapshot;
+import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.QuerySnapshot;
+
+public class AdminLogin extends AppCompatActivity {
+
+    private static final String TAG = "Admin";
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_admin_login);
+
+        AppCompatButton btnLogin = findViewById(R.id.btnLogin);
+
+        btnLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String email = ((EditText) findViewById(R.id.editTextTextEmailAddress)).getText().toString();
+                String password = ((EditText) findViewById(R.id.editTextTextPassword)).getText().toString();
+
+                FirebaseFirestore db = FirebaseFirestore.getInstance();
+                db.collection("Admin")
+                        .whereEqualTo("email", email) // Check for email equality
+                        .get()
+                        .addOnSuccessListener(new OnSuccessListener<QuerySnapshot>() {
+                            @Override
+                            public void onSuccess(QuerySnapshot queryDocumentSnapshots) {
+                                if (!queryDocumentSnapshots.isEmpty()) {
+                                    for (DocumentSnapshot documentSnapshot : queryDocumentSnapshots) {
+                                        String storedPassword = documentSnapshot.getString("password");
+                                        if (storedPassword != null && storedPassword.equals(password)) {
+                                            Intent intent = new Intent(AdminLogin.this, AdminHome.class);
+                                            startActivity(intent);
+                                            return; // Exit loop if login successful
+                                        }
+                                    }
+                                    Toast.makeText(AdminLogin.this, "Incorrect email or password", Toast.LENGTH_SHORT).show();
+                                } else {
+                                    Toast.makeText(AdminLogin.this, "No user found with this email", Toast.LENGTH_SHORT).show();
+                                }
+                            }
+                        })
+                        .addOnFailureListener(new OnFailureListener() {
+                            @Override
+                            public void onFailure(@NonNull Exception e) {
+                                Toast.makeText(AdminLogin.this, "Error fetching user data", Toast.LENGTH_SHORT).show();
+                            }
+                        });
+            }
+        });
+    }
+}
+
+
+MainActivity
+package com.hiskytech.feastfleet;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.util.Log;
+import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
+import com.firebase.ui.firestore.FirestoreRecyclerAdapter;
+import com.firebase.ui.firestore.FirestoreRecyclerOptions;
+import com.google.firebase.firestore.DocumentSnapshot;
+import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.Query;
+import com.hiskytech.feastfleet.databinding.ActivityMainBinding;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class MainActivity extends AppCompatActivity {
+    private ActivityMainBinding binding;
+    private FirestoreRecyclerAdapter<ModelImage, AdapterImage.ImageViewHolder> adapterHeader;
+    private FirestoreRecyclerAdapter<ModelImage, AdapterImage.ImageViewHolder> adapterSection1;
+    private FirestoreRecyclerAdapter<ModelImage, AdapterImage.ImageViewHolder> adapterSection2;
+    private FirestoreRecyclerAdapter<ModelImage, AdapterImage.ImageViewHolder> adapterSection3;
+    private FirestoreRecyclerAdapter<ModelImage, AdapterImage.ImageViewHolder> adapterSection4;
+    private FirebaseFirestore db;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        binding = ActivityMainBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
+
+        String userName = getIntent().getStringExtra("userName");
+        binding.textView5.setText(userName);
+
+        db = FirebaseFirestore.getInstance();
+
+        setupRecyclerView(binding.rvHeader, "headerCollection");
+        setupSectionRecyclerViews();
+    }
+
+    private void setupRecyclerView(RecyclerView recyclerView, String collection) {
+        Query query;
+        if (collection.equals("headerCollection")) {
+            // Filter documents where the field "name" is equal to "res" for the headerCollection adapter
+            query = db.collection("Food").whereEqualTo("name", "res");
+        } else {
+            // Default query without any filtering for other sections
+            query = db.collection("Food");
+        }
+
+        FirestoreRecyclerOptions<ModelImage> options = new FirestoreRecyclerOptions.Builder<ModelImage>()
+                .setQuery(query, ModelImage.class)
+                .build();
+
+        AdapterImage adapter = new AdapterImage(options, this);
+        recyclerView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
+        recyclerView.setAdapter(adapter);
+        adapter.startListening();
+
+        if (collection.equals("headerCollection")) {
+            adapterHeader = adapter;
+        }
+    }
+
+    private void setupSectionRecyclerViews() {
+        db.collection("Food").whereNotEqualTo("name", "res").get()
+                .addOnCompleteListener(task -> {
+                    if (task.isSuccessful()) {
+                        List<DocumentSnapshot> documents = task.getResult().getDocuments();
+                        int totalDocuments = documents.size();
+                        int partitionSize = totalDocuments / 4;
+
+                        List<DocumentSnapshot> section1List = documents.subList(0, partitionSize);
+                        List<DocumentSnapshot> section2List = documents.subList(partitionSize, partitionSize * 2);
+                        List<DocumentSnapshot> section3List = documents.subList(partitionSize * 2, partitionSize * 3);
+                        List<DocumentSnapshot> section4List = documents.subList(partitionSize * 3, totalDocuments);
+
+                        setupSectionRecyclerView(binding.rvSection1, section1List, LinearLayoutManager.HORIZONTAL);
+                        setupSectionRecyclerView(binding.rvSection2, section2List, LinearLayoutManager.HORIZONTAL);
+                        setupSectionRecyclerView(binding.rvSection3, section3List, LinearLayoutManager.HORIZONTAL);
+                        setupSectionRecyclerView(binding.rvSection4, section4List, LinearLayoutManager.VERTICAL);
+                    } else {
+                        Log.d("MainActivity", "Error getting documents: ", task.getException());
+                    }
+                });
+    }
+
+    private void setupSectionRecyclerView(RecyclerView recyclerView, List<DocumentSnapshot> documentList, int orientation) {
+        if (documentList.isEmpty()) {
+            // Handle the case where the document list is empty
+            recyclerView.setAdapter(null);
+            return;
+        }
+
+        Query query = db.collection("Food").whereIn("__name__", extractIds(documentList));
+
+        FirestoreRecyclerOptions<ModelImage> options = new FirestoreRecyclerOptions.Builder<ModelImage>()
+                .setQuery(query, ModelImage.class)
+                .build();
+
+        AdapterImage adapter = new AdapterImage(options, this);
+        recyclerView.setLayoutManager(new LinearLayoutManager(this, orientation, false));
+        recyclerView.setAdapter(adapter);
+        adapter.startListening();
+    }
+
+    private List<String> extractIds(List<DocumentSnapshot> documentList) {
+        List<String> ids = new ArrayList<>();
+        for (DocumentSnapshot doc : documentList) {
+            ids.add(doc.getId());
+        }
+        return ids;
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        if (adapterHeader != null) adapterHeader.stopListening();
+        if (adapterSection1 != null) adapterSection1.stopListening();
+        if (adapterSection2 != null) adapterSection2.stopListening();
+        if (adapterSection3 != null) adapterSection3.stopListening();
+        if (adapterSection4 != null) adapterSection4.stopListening();
+    }
+}
+
+ModelImage
+package com.hiskytech.feastfleet;
+
+public class ModelImage {
+    private String imageUrl;
+    private String name;
+    private String description;
+    private String price;
+
+    // Default constructor
+    public ModelImage() {
+        this.imageUrl = "";
+        this.name = "";
+        this.description = "";
+        this.price = "";
+    }
+
+    // Parameterized constructor
+    public ModelImage(String imageUrl, String name, String description, String price) {
+        this.imageUrl = imageUrl;
+        this.name = name;
+        this.description = description;
+        this.price = price;
+    }
+
+    // Getter and setter methods for imageUrl
+    public String getImageUrl() {
+        return imageUrl;
+    }
+
+    public void setImageUrl(String imageUrl) {
+        this.imageUrl = imageUrl;
+    }
+
+    // Getter and setter methods for name
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+    // Getter and setter methods for name
+    public String getPrice() {
+        return price;
+    }
+
+    public void setPrice(String name) {
+        this.price = name;
+    }
+
+    // Getter and setter methods for description
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+}
+
+ModelUser
+package com.hiskytech.feastfleet;
+
+public class ModelUser {
+    private String name;
+    private String email;
+    private String password;
+    private String userId;
+
+    // Default constructor
+    public ModelUser() {
+        this.name = "";
+        this.email = "";
+        this.password = "";
+        this.userId = "";
+    }
+
+    // Parameterized constructor
+    public ModelUser(String name, String email, String password, String userId) {
+        this.name = name;
+        this.email = email;
+        this.password = password;
+        this.userId = userId;
+    }
+
+    // Getter and setter methods
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+    public ModelUser(String name, String email) {
+        this.name = name;
+        this.email = email;
+        this.password = "";
+        this.userId = "";
+    }
+    public String getUserId() {
+        return userId;
+    }
+
+    public void setUserId(String userId) {
+        this.userId = userId;
+    }
+}
+
+UserAdapter
+package com.hiskytech.feastfleet;
+
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.TextView;
+
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.RecyclerView;
+
+import com.google.firebase.firestore.DocumentSnapshot;
+import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.Query;
+import com.google.firebase.firestore.QueryDocumentSnapshot;
+import com.google.firebase.firestore.QuerySnapshot;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class UserAdapter extends RecyclerView.Adapter<UserAdapter.UserViewHolder> {
+
+    private List<ModelUser> userList = new ArrayList<>();
+    private FirebaseFirestore db = FirebaseFirestore.getInstance();
+
+    public UserAdapter() {
+        fetchUsers();
+    }
+
+    private void fetchUsers() {
+        db.collection("users").get()
+                .addOnCompleteListener(task -> {
+                    if (task.isSuccessful()) {
+                        QuerySnapshot querySnapshot = task.getResult();
+                        for (QueryDocumentSnapshot document : querySnapshot) {
+                            String name = document.getString("name");
+                            String email = document.getString("email");
+                            userList.add(new ModelUser(name, email));
+                        }
+                        notifyDataSetChanged();
+                    } else {
+                        // Handle the error
+                    }
+                });
+    }
+
+    @NonNull
+    @Override
+    public UserViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_user, parent, false);
+        return new UserViewHolder(view);
+    }
+
+    @Override
+    public void onBindViewHolder(@NonNull UserViewHolder holder, int position) {
+        ModelUser user = userList.get(position);
+        holder.textViewUserName.setText(user.getName());
+        holder.textViewUserEmail.setText(user.getEmail());
+    }
+
+    @Override
+    public int getItemCount() {
+        return userList.size();
+    }
+
+    public static class UserViewHolder extends RecyclerView.ViewHolder {
+        TextView textViewUserName;
+        TextView textViewUserEmail;
+
+        public UserViewHolder(@NonNull View itemView) {
+            super(itemView);
+            textViewUserName = itemView.findViewById(R.id.textViewUserName);
+            textViewUserEmail = itemView.findViewById(R.id.textViewUserEmail);
+        }
+    }
+}
+
+ViewUserActivity
+package com.hiskytech.feastfleet;
+
+import android.os.Bundle;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
+public class ViewUsersActivity extends AppCompatActivity {
+
+    private RecyclerView recyclerViewUsers;
+    private UserAdapter userAdapter;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_view_users);
+
+        recyclerViewUsers = findViewById(R.id.recyclerViewUsers);
+        recyclerViewUsers.setLayoutManager(new LinearLayoutManager(this));
+        userAdapter = new UserAdapter();
+        recyclerViewUsers.setAdapter(userAdapter);
+    }
+}
+
+
+ExampleInstrumentedTest
+package com.hiskytech.feastfleet;
+
+import android.content.Context;
+
+import androidx.test.platform.app.InstrumentationRegistry;
+import androidx.test.ext.junit.runners.AndroidJUnit4;
+
+import org.junit.Test;
+import org.junit.runner.RunWith;
+
+import static org.junit.Assert.*;
+
+/**
+ * Instrumented test, which will execute on an Android device.
+ *
+ * @see <a href="http://d.android.com/tools/testing">Testing documentation</a>
+ */
+@RunWith(AndroidJUnit4.class)
+public class ExampleInstrumentedTest {
+    @Test
+    public void useAppContext() {
+        // Context of the app under test.
+        Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
+        assertEquals("com.hiskytech.feastfleet", appContext.getPackageName());
+    }
+}
+
+ExampleUnitTest  
+package com.hiskytech.feastfleet;
+
+import org.junit.Test;
+
+import static org.junit.Assert.*;
+
+/**
+ * Example local unit test, which will execute on the development machine (host).
+ *
+ * @see <a href="http://d.android.com/tools/testing">Testing documentation</a>
+ */
+public class ExampleUnitTest {
+    @Test
+    public void addition_isCorrect() {
+        assertEquals(4, 2 + 2);
+    }
+}
